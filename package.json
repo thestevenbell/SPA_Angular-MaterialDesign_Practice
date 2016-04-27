@@ -1,27 +1,31 @@
 {
-  "name": "steven_bell_web_developer_portfolio",
+  "name": "angular_material_jade_scss_browsersync_gulp_template",
   "version": "1.0.0",
-  "description": "Personal website and portfolio for Steven Bell, Atlanta, Georgia based full stack web developer.",
+  "description": "Template for Angular v1, Material Design, scss, Jade and BrowserSync with builds via Gulp for efficent SPA Development.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thestevenbell/SPA_Angular-MaterialDesign_Template.git"
+  },
   "keywords": [
     "web",
     "developer",
-    "portfolio",
-    "design",
     "MEAN",
     "javascript",
-    "rails",
-    "ruby",
+    "angular",
+    "material design",
     "node",
     "npm",
     "css",
-    "html"
+    "html",
+    "gulp",
+    "browser-sync"
   ],
   "author": "Steven Bell",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
@@ -29,13 +33,14 @@
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.2.0",
     "gulp-sass": "^2.2.0",
-    "gulp-util": "^3.0.7",
-    "livereload": "^0.4.1",
-    "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2"
+    "gulp-util": "^3.0.7"
   },
   "dependencies": {
-    "bourbon": "^4.2.6",
+    "angular-material": "^1.0.7",
+    "angular-messages": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-sanitize": "^1.5.3",
+    "gulp": "^3.9.1",
     "jade": "^1.11.0"
   }
 }

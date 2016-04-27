@@ -1,66 +1,8 @@
-@import "../bourbon/bourbon";
-@import "../neat/neat";
-@import "_accordion";
-@import "_text";
+
 
 //###########################################################################
 //STYLING FOR DOC MAIN
 //###########################################################################
-.image{
-  line-height: 0;
-  width: 100%;
-  height: 10em;
-  background-image: url("../../img/dark_embroidery.png");
-  background-repeat: repeat;
-}
-
-.mainContainer {
-    @include outer-container;
-    height: 600px;
-}
-
-.title {
-
-}
-
-.menuDrop {
-    margin: 0 auto;
-}
-
-.leftAside {
-        @include span-columns(3);
-        height: 80%;
-        background-color: rgba(198, 203, 204, 0.5);
-}
-
-.rightAside {
-    @include span-columns(9);
-    @include omega();
-    background-color: rgba(198, 203, 204, 0.5);
-    height: 80%;
-    padding-left: 2%;
-}
-
-.accordion {
-    margin: 0 auto;
-        background-color: rgba(198, 203, 204, 0.8);
-}
-
-
-h1{
-    color: darkgrey;
-    font-family: 'Abril Fatface', serif;
-    font-size: 4em;
-}
-
-h2 {
-    font-family: 'Josefin Slab', serif;
-    font-weight: 700;
-}
-
-a {
-    font-family: 'Josefin Slab', serif;
-}
 
 
 

@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    neat = require('node-neat').includePaths;
     jade = require('gulp-jade');
+    sass = require('gulp-sass');
     livereload = require('gulp-livereload');
     $ = require('gulp-load-plugins')();
     browserSync = require('browser-sync').create();
@@ -34,6 +33,7 @@ gulp.task('serve', ['styles', 'jade'], function() {
 //    browserSync.init({
 //        server: "./"
 //    });
+
   var files = [
       '/*.html',
       'stylesheets/css/*.css',
@@ -49,7 +49,6 @@ gulp.task('serve', ['styles', 'jade'], function() {
       }
    });
 
-
     gulp.watch("stylesheets/*.scss", ['styles']);
     gulp.watch("/*.jade", ['jade']);
     gulp.watch("/*.html").on('change', browserSync.reload);
@@ -60,11 +59,10 @@ gulp.task('serve', ['styles', 'jade'], function() {
 gulp.task('styles', function () {
     return gulp.src(paths.scss)
         .pipe(sass({
-            includePaths: ['styles'].concat(neat),
+
             errLogToConsole: true
         }))
         .pipe(gulp.dest('./stylesheets/css'))
-        .pipe(livereload());
 });
 
 // create a TASK to compile Jade to HTML using gulp-jade

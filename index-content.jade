@@ -1,26 +1,45 @@
 block content
 
-div.mainContainer
-  div.leftAside
-    div.menuDrop
-      ul.accordion
-        li
-          a(href="javascript:void(0)").js-accordion-trigger Menu Accordion
-          ul.submenu
-            li
-              a(href="javascript:void(0)") Sub Item 1
-            li
-              a(href="javascript:void(0)") Sub Item 2
-        li
-          a(href="javascript:void(0)").js-accordion-trigger Another Item
-          ul.submenu
-            li
-              a(href="javascript:void(0)") Sub Item 1
-            li
-              a(href="javascript:void(0)") Sub Item 2
-  div.rightAside
-    h1 Steven Bell
-    h2 Full Stack Web Developer
+
+  //- <!-- Container #1 (see wireframe) -
+md-toolbar(layout="row")
+   h1 Steven Bell
+  h2 Full Stack Web Developer
+
+//- <!-- Container #2 -->
+div(flex layout="row")
+
+    //- <!-- Container #3 -->
+    md-sidenav(md-is-locked-open="true" class="md-whiteframe-z2")
+      md-list
+        //- <!-- List item #1 -->
+        md-list-item
+            md-button
+              md-icon(md-svg-src="./assets/svg/avatar-1.svg" class="avatar")
+                | Lia Luogo
+
+        //- <!-- List item #2 -->
+        <md-list-item >
+            <md-button>
+             <md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar"></md-icon>
+              Lawrence Ray
+            </md-button>
+        </md-list-item>
+
+      </md-list>
+      </md-sidenav>
+
+      <md-content flex id="content">
+      <!-- User details sample -->
+
+      <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
+      <h2>Lia Luogo</h2>
+      p
+        | I love cheese...
+
+
+    //- <!-- Container #4 -->
+    md-content(flex id="content")
 
 
 
