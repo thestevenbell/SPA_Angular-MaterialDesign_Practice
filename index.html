@@ -20,11 +20,32 @@
   </md-toolbar>
   <h2>Full Stack Web Developer</h2>
   <div flex layout="row">
-    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
-    <md-content flex id="content"></md-content>index content
-  </div><script src="js/main.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+      <md-list>
+        <md-list-item>
+          <md-button>
+            <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar">Lia Luogo</md-icon>
+          </md-button>
+        </md-list-item>
+        <md-list-item>
+          <md-button>
+            <md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar">Lawrence Ray</md-icon>
+          </md-button>
+        </md-list-item>
+      </md-list>
+      <md-content flex id="content"></md-content>
+      <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
+    </md-sidenav>
+    <md-content flex id="content"></md-content>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script><script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-  <script></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <script src="js/users/Users.js"></script>
+  <script src="js/users/UsersListController.js"></script>
+  <script src="js/users/UsersDataservice.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/materialApp.js"></script>
 </body>

@@ -19,23 +19,17 @@ div(flex layout="row")
                 | Lia Luogo
 
         //- <!-- List item #2 -->
-        <md-list-item >
-            <md-button>
-             <md-icon md-svg-src="./assets/svg/avatar-4.svg" class="avatar"></md-icon>
-              Lawrence Ray
-            </md-button>
-        </md-list-item>
+        md-list-item
+            md-button
+             md-icon(md-svg-src="./assets/svg/avatar-4.svg" class="avatar")
+              | Lawrence Ray
 
-      </md-list>
-      </md-sidenav>
 
-      <md-content flex id="content">
-      <!-- User details sample -->
 
-      <md-icon md-svg-src="./assets/svg/avatar-1.svg" class="avatar"></md-icon>
-      <h2>Lia Luogo</h2>
-      p
-        | I love cheese...
+      md-content(flex id="content")
+      //- <!-- User details sample -->
+
+      md-icon(md-svg-src="./assets/svg/avatar-1.svg" class="avatar")
 
 
     //- <!-- Container #4 -->
